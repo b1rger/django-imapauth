@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-imapauth"
+version = "0.1.0"
+description = "IMAP authentication backend for Django"
+authors = ["Birger Schacht <birger.schacht@oeaw.ac.at>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "django_imapauth"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^4.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ruff = "^0.0.286"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
